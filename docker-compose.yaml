@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  spring-cloud-config:
+    image: hyness/spring-cloud-config-server:3.0.2-jdk15 
+    container_name: spring-cloud-config
+    environment:
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_URI=https://kimjeongjin@bitbucket.org/xinapsedev/malmoy.git
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME=jjkim@xinapse.ai
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD=^^rla2309
+      - JAVA_OPTS=-Xdebug
+    ports:
+      - "8080:8888"
