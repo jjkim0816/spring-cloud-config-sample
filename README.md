@@ -1,2 +1,2 @@
 # spring-cloud-config-sample
-## config 파일 자동 배포  
+### config 파일 자동 배포  
